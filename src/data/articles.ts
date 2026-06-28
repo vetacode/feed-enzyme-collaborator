@@ -78,7 +78,7 @@ export const articles: Article[] = [
     excerpt:
       "An enzyme that doesn't survive your conditioner is just expensive dust. A practical guide to reading recovery data.",
     content:
-      "Pelleting conditions vary wildly — 70 °C for 30 seconds in one mill, 90 °C for 90 seconds in another. Marketing leaflets quoting \"thermostable up to 95 °C\" tell you almost nothing without context.\n\nAsk suppliers for recovery curves at your specific conditioner temperature and retention time. Better: request a third-party validation using the AOAC-approved method. Liquid post-pellet application sidesteps the issue entirely and is worth the capex on high-throughput broiler mills.\n\nThe enzymes that win in 2026 are the ones that pair credible thermostability data with a flexible application format.",
+      'Pelleting conditions vary wildly — 70 °C for 30 seconds in one mill, 90 °C for 90 seconds in another. Marketing leaflets quoting "thermostable up to 95 °C" tell you almost nothing without context.\n\nAsk suppliers for recovery curves at your specific conditioner temperature and retention time. Better: request a third-party validation using the AOAC-approved method. Liquid post-pellet application sidesteps the issue entirely and is worth the capex on high-throughput broiler mills.\n\nThe enzymes that win in 2026 are the ones that pair credible thermostability data with a flexible application format.',
     author: "Tomás Vidal",
     authorBio: "Feed mill operations specialist.",
     date: "Apr 30, 2026",
