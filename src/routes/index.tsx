@@ -11,9 +11,19 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "Zymefeed — Independent reporting on feed enzymes" },
-      { name: "description", content: "A Medium-style publication covering enzyme technology for animal nutrition: phytase, NSPs, protease, aquafeed, and the economics behind every gram of activity." },
+      {
+        name: "description",
+        content:
+          "A Medium-style publication covering enzyme technology for animal nutrition: phytase, NSPs, protease, aquafeed, and the economics behind every gram of activity.",
+      },
+
       { property: "og:title", content: "Zymefeed — Independent reporting on feed enzymes" },
-      { property: "og:description", content: "Phytase, NSP enzymes, protease, aquafeed — the science and economics of feed additives." },
+
+      {
+        property: "og:description",
+        content:
+          "Phytase, NSP enzymes, protease, aquafeed — the science and economics of feed additives.",
+      },
     ],
   }),
   component: Index,
@@ -32,9 +42,7 @@ function Index() {
       <section className="mx-auto mt-20 max-w-6xl px-6">
         <div className="flex items-end justify-between">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-primary">
-              Featured
-            </p>
+            <p className="text-xs font-semibold uppercase tracking-widest text-primary">Featured</p>
             <h2 className="mt-2 font-serif text-3xl text-foreground">This week's read</h2>
           </div>
           <Link
