@@ -7,24 +7,32 @@ export function SiteFooter() {
         <div className="md:col-span-2">
           <p className="font-serif text-2xl tracking-tight text-foreground">Zymefeed</p>
           <p className="mt-3 max-w-sm text-sm text-muted-foreground">
-            Independent reporting on enzyme technology for animal nutrition — from the
-            mill floor to the gut microbiome.
+            Independent reporting on enzyme technology for animal nutrition — from the mill floor to
+            the gut microbiome.
           </p>
         </div>
         <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-foreground">
-            Read
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-foreground">Read</p>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-            <li><Link to="/articles" className="hover:text-foreground">All articles</Link></li>
-            <li><Link to="/about" className="hover:text-foreground">About</Link></li>
-            <li><Link to="/contact" className="hover:text-foreground">Newsletter</Link></li>
+            <li>
+              <Link to="/articles" className="hover:text-foreground">
+                All articles
+              </Link>
+            </li>
+            <li>
+              <Link to="/about" className="hover:text-foreground">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact" className="hover:text-foreground">
+                Newsletter
+              </Link>
+            </li>
           </ul>
         </div>
         <div>
-          <p className="text-xs font-semibold uppercase tracking-widest text-foreground">
-            Topics
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-widest text-foreground">Topics</p>
           <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             <li>Phytase</li>
             <li>NSP Enzymes</li>
