@@ -1,7 +1,13 @@
 import { Link } from "@tanstack/react-router";
 import type { Article } from "@/data/articles";
 
-export function ArticleCard({ article, variant = "row" }: { article: Article; variant?: "row" | "feature" }) {
+export function ArticleCard({
+  article,
+  variant = "row",
+}: {
+  article: Article;
+  variant?: "row" | "feature";
+}) {
   if (variant === "feature") {
     return (
       <Link
@@ -13,7 +19,7 @@ export function ArticleCard({ article, variant = "row" }: { article: Article; va
           <img
             src={article.cover}
             alt={article.title}
-            className="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+            className="aspect-4/3 w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
             loading="lazy"
           />
         </div>
@@ -26,7 +32,8 @@ export function ArticleCard({ article, variant = "row" }: { article: Article; va
           </h2>
           <p className="mt-4 text-base text-muted-foreground">{article.excerpt}</p>
           <p className="mt-6 text-sm text-muted-foreground">
-            <span className="text-foreground">{article.author}</span> · {article.date} · {article.readTime}
+            <span className="text-foreground">{article.author}</span> · {article.date} {"·"}
+            {article.readTime}
           </p>
         </div>
       </Link>
