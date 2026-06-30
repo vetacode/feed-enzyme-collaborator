@@ -8,9 +8,17 @@ export const Route = createFileRoute("/articles/")({
   head: () => ({
     meta: [
       { title: "Articles — Zymefeed" },
-      { name: "description", content: "Every Zymefeed article on feed enzymes — phytase, NSP enzymes, protease, aquafeed, and the economics of formulation." },
+      {
+        name: "description",
+        content:
+          "Every Zymefeed article on feed enzymes — phytase, NSP enzymes, protease, aquafeed, and the economics of formulation.",
+      },
+
       { property: "og:title", content: "Articles — Zymefeed" },
-      { property: "og:description", content: "Independent reporting on enzyme additives in animal feed." },
+      {
+        property: "og:description",
+        content: "Independent reporting on enzyme additives in animal feed.",
+      },
     ],
   }),
   component: ArticlesIndex,
@@ -25,7 +33,8 @@ function ArticlesIndex() {
         <p className="text-xs font-semibold uppercase tracking-widest text-primary">Library</p>
         <h1 className="mt-3 font-serif text-5xl tracking-tight text-foreground">Articles</h1>
         <p className="mt-4 max-w-xl text-lg text-muted-foreground">
-          Long-form writing on feed enzyme technology — written for people who formulate, manufacture, and feed.
+          Long-form writing on feed enzyme technology — written for people who formulate,
+          manufacture, and feed.
         </p>
         <div className="mt-8 flex flex-wrap gap-2">
           {categories.map((c) => (
