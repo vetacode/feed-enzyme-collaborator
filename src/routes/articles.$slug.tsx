@@ -64,17 +64,23 @@ function ArticlePage() {
         </h1>
         <div className="mt-8 flex items-center gap-3 border-y border-border/60 py-4">
           <div className="grid h-11 w-11 place-items-center rounded-full bg-primary/15 font-serif text-primary">
-            {article.author.split(" ").map((n: string) => n[0]).slice(0, 2).join("")}
+            {article.author
+              .split(" ")
+              .map((n: string) => n[0])
+              .slice(0, 2)
+              .join("")}
           </div>
           <div className="text-sm">
             <p className="text-foreground">{article.author}</p>
-            <p className="text-muted-foreground">{article.date} · {article.readTime}</p>
+            <p className="text-muted-foreground">
+              {article.date} · {article.readTime}
+            </p>
           </div>
         </div>
         <img
           src={article.cover}
           alt={article.title}
-          className="mt-10 aspect-[16/9] w-full rounded-lg object-cover"
+          className="mt-10 aspect-video w-full rounded-lg object-cover"
         />
         <div className="mt-10 space-y-6 font-serif text-lg leading-relaxed text-foreground/90">
           {article.content.split("\n\n").map((p: string, i: number) => (
