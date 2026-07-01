@@ -11,7 +11,11 @@ export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
       { title: "Contact & Newsletter — Zymefeed" },
-      { name: "description", content: "Subscribe to the Zymefeed newsletter or send us a story tip. One email every two weeks, no supplier promotions." },
+      {
+        name: "description",
+        content:
+          "Subscribe to the Zymefeed newsletter or send us a story tip. One email every two weeks, no supplier promotions.",
+      },
       { property: "og:title", content: "Contact Zymefeed" },
       { property: "og:description", content: "Subscribe or send a story tip." },
     ],
@@ -31,8 +35,8 @@ function Contact() {
             Story tips, corrections, or just to say hello.
           </h1>
           <p className="mt-6 text-lg text-muted-foreground">
-            We read every message. If you're working on something interesting — a trial,
-            a deployment, a question the literature hasn't answered — we want to hear it.
+            We read every message. If you're working on something interesting — a trial, a
+            deployment, a question the literature hasn't answered — we want to hear it.
           </p>
           <div className="mt-10 flex items-center gap-3 text-sm text-muted-foreground">
             <Mail className="h-4 w-4 text-primary" />
@@ -42,8 +46,8 @@ function Contact() {
         <div className="rounded-2xl border border-border/60 bg-card p-8">
           <h2 className="font-serif text-2xl text-foreground">Subscribe</h2>
           <p className="mt-2 text-sm text-muted-foreground">
-            One newsletter every two weeks. The headline article, a market note, and one
-            paper worth reading.
+            One newsletter every two weeks. The headline article, a market note, and one paper worth
+            reading.
           </p>
           {submitted ? (
             <p className="mt-8 rounded-md bg-primary/10 p-4 text-sm text-primary">
@@ -60,7 +64,9 @@ function Contact() {
               <Input required type="text" placeholder="Your name" />
               <Input required type="email" placeholder="you@company.com" />
               <Textarea rows={3} placeholder="Anything you'd like us to cover? (optional)" />
-              <Button type="submit" className="w-full">Subscribe</Button>
+              <Button type="submit" className="w-full">
+                Subscribe
+              </Button>
             </form>
           )}
         </div>
